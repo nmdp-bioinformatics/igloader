@@ -2,8 +2,10 @@
 
 HL7(R) FHIR(R) implementation guide uploader (from IGPack tarball file).
 
-For now, this is a very simplistic IG uploader, with no handling of the
-IGPack's package.json file or server's CapabilityStatement.
+The module offers a client-orchestrated means to upload conformance resources
+from an IGPack tarfile to a FHIR server, so the server can use them when
+validating FHIR resources.  For now, this is a simplistic IG uploader, with
+no handling of the IGPack's package.json file or server's CapabilityStatement.
 
 Except for the requests module, this code uses only Python standard library
 modules.  It uses the json module to inspect file resource types, but uploads
