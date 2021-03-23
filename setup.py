@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='igloader',
-    version='0.1',
+    version='0.2',
     description='HL7(R) FHIR(R) implementation guide uploader (from IG pack file).',
     url='https://github.com/nmdp-bioinformatics/igloader',
     author='Joel Schneider',
