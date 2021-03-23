@@ -169,6 +169,8 @@ def upload_fhir_resources(target_url, access_token, content_by_type):
         request_headers['Authorization'] = 'Bearer {}'.format(access_token)
 
     for resource_type in RESOURCE_TYPE_LIST:
+        if resource_type not in content_by_type:
+            continue
         qty = len(content_by_type[resource_type])
         print('{} ({})'.format(resource_type, qty))
         resource_endpoint = '{}/{}'.format(target_url, resource_type)
